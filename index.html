@@ -65,6 +65,21 @@
       background: radial-gradient(circle at 70% 70%, var(--accent-2), transparent 60%);
     }
 
+    @media (max-width: 640px) {
+      body::before,
+      body::after {
+        inset: 5% auto auto -10%;
+        width: 70vw;
+        min-width: 260px;
+        filter: blur(70px);
+        opacity: 1;
+      }
+
+      body::after {
+        inset: auto -10% 5% auto;
+      }
+    }
+
     .page {
       padding: 6vh 6vw;
       max-width: 1100px;
